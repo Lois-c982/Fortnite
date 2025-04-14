@@ -1,13 +1,21 @@
-body {
-    background-color: #f4f4f4;
+:root {
+    --primary-color: #5c6bc0;
+    --secondary-color: #8e24aa;
+    --text-color: #ffffff;
+    --bg-color: #1e1e2f;
+    --accent-color: #ffca28;
+    --font-main: 'Burbank Big Condensed', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    color: rgb(249, 146, 203);
-  }
-  
-  p {
-    font-size: 18px;
-  }
-  
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+ }
