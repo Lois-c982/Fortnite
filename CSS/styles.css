@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #6b78c2 !important;
-  --secondary-color: #ebe989 !important;
+  --primary-color: rgb(107, 120, 194) !important;
+  --secondary-color: rgb(107, 120, 194) !important;
   --text-color: #ffffff !important;
   --bg-color: #1e1e2f !important;
-  --accent-color: #ffca28 !important;
+  --accent-color: #f8f8f3 !important;
   --font-main: 'Burbank Big Condensed', sans-serif !important;
 }
 
