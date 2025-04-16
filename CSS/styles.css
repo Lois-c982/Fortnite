@@ -87,7 +87,7 @@ nav ul li a:hover {
   width: 300px;
   height: 200px;
   perspective: 1000px; /* Enables the 3D effect */
-  margin: 2rem auto;  /* Centers the card and adds vertical spacing */
+  margin: 4rem auto;  /* Centers the card and adds vertical spacing */
 }
 
 /* Inner container that will be flipped */
