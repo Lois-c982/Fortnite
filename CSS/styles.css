@@ -151,7 +151,7 @@ nav ul li a:hover {
 
 /* crop and centre carousel images*/
 .carousel-inner img {
-  width: 100%;
+  width: 400px;
   height: 700px;
   object-fit: cover;
   object-position: center;
