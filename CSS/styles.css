@@ -150,115 +150,97 @@ nav ul li a:hover {
 }
 
 
-/* Carousel Container: fixed height, responsive width */
+/* Intro Sections */
+.intro {
+  padding: 2rem 0;
+}
+.intro h2 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* Carousel Styles */
 .carousel-container {
   position: relative;
   width: 100%;
   max-width: 400px;
-  margin: 2rem auto;
+  height: 225px;               /* adjust visible height */
+  margin: 2rem 0;
   overflow: hidden;
-  border: 3px solid var(--accent-color, #ffca28);
+  border: 3px solid var(--accent-color);
   border-radius: 12px;
-  height: 225px;            /* set desired visible height */
 }
-
-/* Slides wrapper fills container height */
+.carousel-container input[type="radio"] {
+  display: none;
+}
 .carousel-slides {
   display: flex;
   width: 300%;
-  height: 100%;             /* ensure slides match container height */
+  height: 100%;
   transition: transform 0.5s ease-in-out;
 }
-
-/* Each slide fills wrapper */
 .carousel-slide {
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;             /* match container height */
+  flex: 0 0 100%;
+  height: 100%;
 }
-
-/* Images cover the slide area, cropping as needed */
 .carousel-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;        /* crop and center image */
+  object-fit: cover;           /* crop & center image */
+  object-position: center;
   display: block;
 }
-
-/* Radio‑button positioning logic (no change) */
+/* Slide positioning */
 #slide1:checked ~ .carousel-slides { transform: translateX(0%); }
 #slide2:checked ~ .carousel-slides { transform: translateX(-100%); }
 #slide3:checked ~ .carousel-slides { transform: translateX(-200%); }
 
-
-/* Arrow styling */
+/* Arrows */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
+  width: 32px; height: 32px;
   background: rgba(0,0,0,0.5);
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
-  line-height: 36px;
+  line-height: 32px;
   cursor: pointer;
   border-radius: 50%;
   display: none;
   z-index: 10;
 }
-
-/* Positioning */
-.arrow.prev { left: 10px; }
-.arrow.next { right: 10px; }
-
-/* Show the correct arrows for each slide */
+.arrow.prev { left: 8px; }
+.arrow.next { right: 8px; }
+/* Show arrows per slide */
 #slide1:checked ~ .prev1,
 #slide2:checked ~ .prev2,
-#slide3:checked ~ .prev3 {
-  display: block;
-}
+#slide3:checked ~ .prev3 { display: block; }
 #slide1:checked ~ .next1,
 #slide2:checked ~ .next2,
-#slide3:checked ~ .next3 {
-  display: block;
-}
+#slide3:checked ~ .next3 { display: block; }
 
-/* Dots navigation */
+/* Dots Navigation */
 .carousel-nav {
   text-align: center;
-  padding: 0.5rem 0;
+  margin-top: 0.75rem;
 }
 .carousel-nav label {
   cursor: pointer;
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  background-color: #ddd;
+  width: 10px; height: 10px;
+  margin: 0 4px;
+  background: #ccc;
   border-radius: 50%;
-  transition: background-color 0.3s;
+  transition: background 0.3s;
 }
 #slide1:checked ~ .carousel-nav label[for="slide1"],
 #slide2:checked ~ .carousel-nav label[for="slide2"],
 #slide3:checked ~ .carousel-nav label[for="slide3"] {
-  background-color: var(--accent-color, #ffca28);
+  background: var(--accent-color);
 }
 
-/* Make carousel responsive on smaller screens */
-@media (max-width: 480px) {
-  .carousel-container {
-    max-width: 100%;
-    border-width: 2px;
-  }
-  .arrow {
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    font-size: 1.2rem;
-  }
-}
 
 footer {
   background-color: var(--secondary-color) !important;
@@ -271,12 +253,19 @@ footer p {
   color: var(--text-color) !important;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-      flex-direction: column !important;
+/*Responsive Tweaks*/
+@media (max-width: 480px) {
+  .carousel-container {
+    max-width: 100%;
+    height: 180px;
+    border-width: 2px;
   }
-
-  .hero h2 {
-      font-size: 1.5rem !important;
+  .arrow {
+    width: 24px; height: 24px;
+    line-height: 24px;
+    font-size: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
   }
 }

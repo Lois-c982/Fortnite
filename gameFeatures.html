@@ -62,42 +62,47 @@
   </section>
 
   
-  <div class="carousel-container">
-    <!-- 3 radio buttons to track slides -->
-    <input type="radio" name="carousel" id="slide1" checked>
-    <input type="radio" name="carousel" id="slide2">
-    <input type="radio" name="carousel" id="slide3">
-  
-    <!-- Slides wrapper -->
-    <div class="carousel-slides">
-      <div class="carousel-slide">
-        <img src="https://assetsio.gnwcdn.com/fortnite_skull_trooper_NQTlcUz.jpg" alt="Skin 1">
-      </div>
-      <div class="carousel-slide">
-        <img src="https://assetsio.gnwcdn.com/fortnite-shadow-ops.jpg" alt="Skin 2">
-      </div>
-      <div class="carousel-slide">
-        <img src="https://pm1.aminoapps.com/6943/39dfedace1caf7bd4c5db74bf9e65a6c3457d6d7r1-769-990v2_uhq.jpg" alt="Skin 3">
+  <!-- Carousel Section -->
+  <section class="carousel-section">
+    <div class="container d-flex justify-content-center">
+      <div class="carousel-container">
+        <!-- radio controls -->
+        <input type="radio" name="carousel" id="slide1" checked>
+        <input type="radio" name="carousel" id="slide2">
+        <input type="radio" name="carousel" id="slide3">
+
+        <!-- slides -->
+        <div class="carousel-slides">
+          <div class="carousel-slide">
+            <img src="https://assetsio.gnwcdn.com/fortnite_skull_trooper_NQTlcUz.jpg" alt="Skin 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://assetsio.gnwcdn.com/fortnite-shadow-ops.jpg" alt="Skin 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://pm1.aminoapps.com/6943/39dfedace1caf7bd4c5db74bf9e65a6c3457d6d7r1-769-990v2_uhq.jpg" alt="Skin 3">
+          </div>
+        </div>
+
+        <!-- arrows -->
+        <label for="slide3" class="arrow prev prev1">&#10094;</label>
+        <label for="slide2" class="arrow next next1">&#10095;</label>
+
+        <label for="slide1" class="arrow prev prev2">&#10094;</label>
+        <label for="slide3" class="arrow next next2">&#10095;</label>
+
+        <label for="slide2" class="arrow prev prev3">&#10094;</label>
+        <label for="slide1" class="arrow next next3">&#10095;</label>
+
+        <!-- dots -->
+        <div class="carousel-nav">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
       </div>
     </div>
-  
-    <!-- Arrows -->
-    <label for="slide3" class="arrow prev prev1">&#10094;</label>
-    <label for="slide2" class="arrow next next1">&#10095;</label>
-  
-    <label for="slide1" class="arrow prev prev2">&#10094;</label>
-    <label for="slide3" class="arrow next next2">&#10095;</label>
-  
-    <label for="slide2" class="arrow prev prev3">&#10094;</label>
-    <label for="slide1" class="arrow next next3">&#10095;</label>
-  
-    <!-- Dots Navigation -->
-    <div class="carousel-nav">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-      <label for="slide3"></label>
-    </div>
-  </div>
+  </section>
         
   
   <!-- Footer -->
