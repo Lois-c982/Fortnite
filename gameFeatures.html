@@ -62,47 +62,84 @@
   </section>
 
   
-  <!-- Carousel Section -->
-  <section class="carousel-section">
-    <div class="container d-flex justify-content-center">
-      <div class="carousel-container">
-        <!-- radio controls -->
-        <input type="radio" name="carousel" id="slide1" checked>
-        <input type="radio" name="carousel" id="slide2">
-        <input type="radio" name="carousel" id="slide3">
-
-        <!-- slides -->
-        <div class="carousel-slides">
-          <div class="carousel-slide">
-            <img src="https://assetsio.gnwcdn.com/fortnite_skull_trooper_NQTlcUz.jpg" alt="Skin 1">
+    <!-- Carousel of different skins -->
+    <section id="featured" class="py-3">
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+            ></button>
           </div>
-          <div class="carousel-slide">
-            <img src="https://assetsio.gnwcdn.com/fortnite-shadow-ops.jpg" alt="Skin 2">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+              src="https://assetsio.gnwcdn.com/fortnite_skull_trooper_NQTlcUz.jpg"
+              class="d-block w-100"
+              alt="Featured 3"
+            />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://assetsio.gnwcdn.com/fortnite-shadow-ops.jpg"
+                class="d-block w-100"
+                alt="Featured 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://pm1.aminoapps.com/6943/39dfedace1caf7bd4c5db74bf9e65a6c3457d6d7r1-769-990v2_uhq.jpg"
+                class="d-block w-100"
+                alt="Featured 3"
+              />
+            </div>
           </div>
-          <div class="carousel-slide">
-            <img src="https://pm1.aminoapps.com/6943/39dfedace1caf7bd4c5db74bf9e65a6c3457d6d7r1-769-990v2_uhq.jpg" alt="Skin 3">
-          </div>
-        </div>
-
-        <!-- arrows -->
-        <label for="slide3" class="arrow prev prev1">&#10094;</label>
-        <label for="slide2" class="arrow next next1">&#10095;</label>
-
-        <label for="slide1" class="arrow prev prev2">&#10094;</label>
-        <label for="slide3" class="arrow next next2">&#10095;</label>
-
-        <label for="slide2" class="arrow prev prev3">&#10094;</label>
-        <label for="slide1" class="arrow next next3">&#10095;</label>
-
-        <!-- dots -->
-        <div class="carousel-nav">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Text for the carousel -->
+    <section class="py-3">
+      <div class="container text-center">
+        <p class="lead">Some different skins</p>
+      </div>
+    </section>
         
   
   <!-- Footer -->
@@ -111,5 +148,10 @@
       <p>&copy; 2025 Fortnite Fan Website. All rights reserved.</p>
     </div>
   </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AHRNldw2kW43i1KGGoVNHbtfIH5u/Z4zU6FfRvH+8abtTE1Pi6jizoU"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
