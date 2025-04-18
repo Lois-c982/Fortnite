@@ -1,5 +1,5 @@
 # Github Pages Link
-https://lois-c982.github.io/Fortnite/Index.html
+https://lois-c982.github.io/Fortnite/index.html
 
 # Fortnite Fan Website
 
